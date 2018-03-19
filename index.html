@@ -1,26 +1,227 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Title</title>
-        <!-- jQuery CDN -->
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Project 1</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <!--JS, Popper.js, and jQuery-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
-        <!-- Firebase -->
-        <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
-    </head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
 
-    <body>
-          
+</head>
 
+<body>
+    <div class="container top">
+        <h1>FAB D - Home SuperInspectors
+            <h1>
+                <h4></h4>
+    </div>
+    <br>
+    <br>
+    <div class="container page">
+        <div>
+            <div>
+                <h3>Basic Information</h3>
+            </div>
+            <form class="form-group">
+                <div class="form-row">
+                    <div class="form-group col">
+                        <label for="date">Date</label>
+                        <input type="date" class="form-control" placeholder="01/01/2018">
+                    </div>
 
-    </body>
-
-    <!-- Javascript -->
-        <script src="app.js"></script>
-
-    </body>
+                    <div class="form-group col">
+                        <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Preference</label>
+                        <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                            <option selected>Home Inspector...</option>
+                            <option value="1">Peter Smith</option>
+                            <option value="2">Peter Smith Jr</option>
+                            <option value="3">Jane Smith</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <label for="jobNum">Job#</label>
+                        <input type="text" class="form-control" placeholder="100125-2" id="jobNum">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div>
+            <div>
+                <h3>Customer Information</h3>
+            </div>
+            <form>
+                <div class="form-row ">
+                    <div class="col-md-6 mb-3">
+                        <label for="firstName">First name</label>
+                        <input type="text " class="form-control " id="firstName" placeholder="First name
+                        " value="Mark" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="lastName">Last name</label>
+                        <input type="text " class="form-control " id="lastName" placeholder="Last name
+                        " value="Otto " required>
+                    </div>
+                </div>
+                <div class="form-row ">
+                    <div class="col-md-9 mb-3">
+                        <label for="address">Address</label>
+                        <input type="text " class="form-control " id="address" placeholder="Address " value="123
+                        Main Street " required>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label for="unitN">Unit #</label>
+                        <input type="text " class="form-control " id="unitN" placeholder="Unit/Appt" value="101">
+                    </div>
+                </div>
+                <div class="form-row ">
+                    <div class="col-md-6 mb-3 ">
+                        <label for="city">City</label>
+                        <input type="text " class="form-control " id="city" placeholder="Phoenix" required>
+                    </div>
+                    <div class="col-md-3 mb-3 ">
+                        <label for="state">State</label>
+                        <input type="text " class="form-control " id="State" placeholder="AZ" required>
+                    </div>
+                    <div class="col-md-3 mb-3 ">
+                        <label for="zipCode">Zip</label>
+                        <input type="number" class="form-control " id="zipCode" placeholder="85022" required>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div>
+            <div>
+                <h3>Property Facts and Feautures
+                </h3>
+                <div class="row">
+                    <div class="col">
+                        <div class="media">
+                            <img class="align-self-center mr-3" src="..." alt="#">
+                            <div class="media-body">
+                                <h5 class="mt-0">Type</h5>
+                                <p id="type">Single Family Home</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="media">
+                            <img class="align-self-center mr-3" src="..." alt="#">
+                            <div class="media-body">
+                                <h5 class="mt-0">Year Built</h5>
+                                <pid="year">1994</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="media">
+                            <img class="align-self-center mr-3" src="..." alt="#">
+                            <div class="media-body">
+                                <h5 class="mt-0">Sqft</h5>
+                                <p id="roof"> 1845</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                        <div class="col">
+                            <div class="media">
+                                <img class="align-self-center mr-3" src="..." alt="#">
+                                <div class="media-body">
+                                    <h5 class="mt-0">Bedrooms</h5>
+                                    <p>3</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="media">
+                                <img class="align-self-center mr-3" src="..." alt="#">
+                                <div class="media-body">
+                                    <h5 class="mt-0">Bathrooms</h5>
+                                    <p id="nBath">Bathrooms</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="media">
+                                <img class="align-self-center mr-3" src="..." alt="#">
+                                <div class="media-body">
+                                    <h5 class="mt-0">Parking</h5>
+                                    <p id="parking">2 Spaces</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                            <div class="col">
+                                <div class="media">
+                                    <img class="align-self-center mr-3" src="..." alt="#">
+                                    <div class="media-body">
+                                        <h5 class="mt-0">Lot</h5>
+                                        <p>4000 sqft</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="media">
+                                    <img class="align-self-center mr-3" src="..." alt="#">
+                                    <div class="media-body">
+                                        <h5 class="mt-0">Cooling</h5>
+                                        <p>Central</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="media">
+                                    <img class="align-self-center mr-3" src="..." alt="#">
+                                    <div class="media-body">
+                                        <h5 class="mt-0">Heating</h5>
+                                        <p>Pump</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                                <div class="col">
+                                    <div class="media">
+                                        <img class="align-self-center mr-3" src="..." alt="#">
+                                        <div class="media-body">
+                                            <h5 class="mt-0">Roofing</h5>
+                                            <p>Tile</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="media">
+                                        <img class="align-self-center mr-3" src="..." alt="#">
+                                        <div class="media-body">
+                                            <h5 class="mt-0">Flooring</h5>
+                                            <p>Tile / Carpet</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="media">
+                                        <img class="align-self-center mr-3" src="..." alt="#">
+                                        <div class="media-body">
+                                            <h5 class="mt-0">Type</h5>
+                                            <p>Single Family Home</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                
+</body>
 
 </html>

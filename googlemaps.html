@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCeaDj7vsaHBSNIgHlswBXaqYHVq8mkG8&callback=initMap">
+    </script>
+    <style>
+      #map {
+        height: 400px;
+        width: 50%
+      }
+      #floating-panel {
+        position: absolute;
+        top: 10px;
+        left: 15%;
+        z-index: 5;
+        background-color: #fff;
+        padding: 5px;
+        border: 1px solid #999;
+        text-align: center;
+        font-family: 'Roboto','sans-serif';
+        line-height: 30px;
+        padding-left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="floating-panel">
+            <input type="textbox" id="address" placeholder="Address" value="">
+            <input type="button" id="submit" value="Search">
+          </div>
+    <div id="map"></div>
+
+    <script>
+    function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 8,
+        center: {lat: 33.4483771, lng: -112.0740373}
+        });
+        var geocoder = new google.maps.Geocoder();
+
+        document.getElementById('submit').addEventListener('click', function() {
+        geocodeAddress(geocoder, map);
+        });
+    }
+
+    function geocodeAddress(geocoder, resultsMap) {
+        var address = document.getElementById('address').value;
+        geocoder.geocode({'address': address}, function(results, status) {
+            if (status === 'OK') {
+            resultsMap.setCenter(results[0].geometry.location);
+            var marker = new google.maps.Marker({
+                map: resultsMap,
+                position: results[0].geometry.location
+            });
+            } else {
+            alert('Geocode was not successful for the following reason: ' + status);
+            }
+        });
+    }
+    </script>
+      </body>
+</html>

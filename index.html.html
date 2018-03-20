@@ -42,12 +42,12 @@
                 <div class="form-row">
                     <div class="form-group col">
                         <label for="date">Date</label>
-                        <input type="date" class="form-control" placeholder="01/01/2018">
+                        <input type="date" class="form-control" placeholder="01/01/2018" id="date">
                     </div>
 
                     <div class="form-group col">
-                        <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Preference</label>
-                        <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                        <label class="my-1 mr-2" for="homeInsp">Home Inspector</label>
+                        <select class="custom-select my-1 mr-sm-2" id="homeInsp">
                             <option selected>Home Inspector...</option>
                             <option value="1">Peter Smith</option>
                             <option value="2">Peter Smith Jr</option>
@@ -66,16 +66,20 @@
                 <h3>Customer Information</h3>
             </div>
             <form>
-                <div class="form-row ">
-                    <div class="col-md-6 mb-3">
+                <div class="form-row">
+                    <div class="col-md-4 mb-3">
                         <label for="firstName">First name</label>
-                        <input type="text " class="form-control " id="firstName" placeholder="First name
+                        <input type="text" class="form-control " id="firstName" placeholder="First name
                         " value="Mark" required>
                     </div>
-                    <div class="col-md-6 mb-3">
+                    <div class="col-md-4 mb-3">
                         <label for="lastName">Last name</label>
                         <input type="text " class="form-control " id="lastName" placeholder="Last name
                         " value="Otto " required>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control " id="email" placeholder="email" value="noname@homebuyer.com" required>
                     </div>
                 </div>
                 <div class="form-row ">
@@ -96,7 +100,7 @@
                     </div>
                     <div class="col-md-3 mb-3 ">
                         <label for="state">State</label>
-                        <input type="text " class="form-control " id="State" placeholder="AZ" required>
+                        <input type="text " class="form-control " id="state" placeholder="AZ" required>
                     </div>
                     <div class="col-md-3 mb-3 ">
                         <label for="zipCode">Zip</label>
@@ -124,7 +128,7 @@
                             <i class="material-icons">date_range</i>
                             <div class="media-body">
                                 <h5 class="mt-0">Year Built</h5>
-                                <pid="year">1994</p>
+                                <p id="year">1994</p>
                             </div>
                         </div>
                     </div>
@@ -133,7 +137,7 @@
                             <i class="material-icons">terrain</i>
                             <div class="media-body">
                                 <h5 class="mt-0">Sqft</h5>
-                                <p id="roof"> 1845</p>
+                                <p id="sqFt"> 1845</p>
                             </div>
                         </div>
                     </div>
@@ -144,7 +148,7 @@
                             <i class="material-icons">local_hotel</i>
                             <div class="media-body">
                                 <h5 class="mt-0">Bedrooms</h5>
-                                <p>3</p>
+                                <p id="bdr">3</p>
                             </div>
                         </div>
                     </div>
@@ -173,7 +177,7 @@
                             <img class="align-self-center mr-3" src="assets/images/blueprint.png" alt="#">
                             <div class="media-body">
                                 <h5 class="mt-0">Lot</h5>
-                                <p>4000 sqft</p>
+                                <p id="lot">4000 sqft</p>
                             </div>
                         </div>
                     </div>
@@ -182,7 +186,7 @@
                             <img class="align-self-center mr-3" src="assets/images/ac.png" alt="#">
                             <div class="media-body">
                                 <h5 class="mt-0">Cooling</h5>
-                                <p>Central</p>
+                                <p id="cooling">Central</p>
                             </div>
                         </div>
                     </div>
@@ -191,7 +195,7 @@
                             <img class="align-self-center mr-3" src="assets/images/heat.png" alt="#">
                             <div class="media-body">
                                 <h5 class="mt-0">Heating</h5>
-                                <p>Pump</p>
+                                <p id="heat">Pump</p>
                             </div>
                         </div>
                     </div>
@@ -202,7 +206,7 @@
                             <img class="align-self-center mr-3" src="assets/images/roof.png" alt="#">
                             <div class="media-body">
                                 <h5 class="mt-0">Roofing</h5>
-                                <p>Tile</p>
+                                <p id="roofing">Tile</p>
                             </div>
                         </div>
                     </div>
@@ -211,7 +215,7 @@
                             <img class="align-self-center mr-3" src="assets/images/flooring.png" alt="#">
                             <div class="media-body">
                                 <h5 class="mt-0">Flooring</h5>
-                                <p>Tile / Carpet</p>
+                                <p id="flooring">Tile / Carpet</p>
                             </div>
                         </div>
                     </div>
@@ -220,7 +224,7 @@
                             <img class="align-self-center mr-3" src="assets/images/swimming-pool.png" alt="#">
                             <div class="media-body">
                                 <h5 class="mt-0">Pool</h5>
-                                <p>In-ground</p>
+                                <p id="sPool">yes, In-ground</p>
                             </div>
                         </div>
                     </div>
@@ -250,7 +254,7 @@
                             </div>
                         </div>
                         <div class="col-sm">
-
+                            Did you find Waldo?
                             <div class="form-group">
                                 <label for="formGroupExampleInput">Notes</label>
                                 <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
@@ -259,7 +263,7 @@
                     </div>
                     <div class="row">
                         <div class="col-sm">
-                            Are there cracks or shifts in foundation at the base of the walls and ceiling?
+                           
                         </div>
                         <div class="col-sm">
                             <div class="form-check form-check-inline">
@@ -1015,7 +1019,7 @@
 
                     <div class="row">
                         <div class="col-sm">
-                            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                            Are there cracks or shifts in foundation at the base of the walls and ceiling?
                         </div>
                         <div class="col-sm">
                             <div class="form-check form-check-inline">

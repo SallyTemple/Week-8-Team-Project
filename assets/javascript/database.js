@@ -44,8 +44,37 @@ var homeInfo = {
   pool: " ",
 };*/
 
-$(document).ready(function () {
+//google maps function
 
+function initMap() {
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 15,
+    center: { lat: 33.4483771, lng: -112.0740373 }
+  });
+  var geocoder = new google.maps.Geocoder();
+
+  //  document.getElementById('submit').addEventListener('click', function () {
+  geocodeAddress(geocoder, map);
+  //  });
+}
+
+function geocodeAddress(geocoder, resultsMap) {
+  //  var address = document.getElementById('address').value;
+  geocoder.geocode({ 'address': address}, function (results, status) {
+    if (status === 'OK') {
+      resultsMap.setCenter(results[0].geometry.location);
+      var marker = new google.maps.Marker({
+        map: resultsMap,
+        position: results[0].geometry.location
+      });
+    } else {
+      console.log('Geocode was not successful for the following reason: ' + status);
+    }
+  });
+};
+
+$(document).ready(function () {
+  $("#mapPage").hide()
 
   $("#newJob").on("click", function () {
 
@@ -75,7 +104,9 @@ $("#saveInfo").on("click", function () {
 
   $("#basicInfo").hide();
   $("#customerInfo").hide();
-  $("#homeIns").show();
+  $("#map").show();
+  $("#mapPage").show();
+  //$("#homeIns").show();
 
 
   // create data base object
@@ -95,36 +126,44 @@ $("#saveInfo").on("click", function () {
 
   };
 
-
   database.ref().child("Inspection: " + jobNum).push(newJob);
-
-
- // $("#homeIns").text("Session No. " + jobNum);
-
-  $("#submit").click(function () {
-    event.preventDefault();
-    for (i = 0; i < quesNum; i++) {
-      for (j = 1; j < 4; j++) { //checking to see which of the 3 radio buttons is checked
-        if ($("#q" + i + "B" + j).is(':checked')) {
-          answer = $("#q" + i + "B" + j).attr("value");
-        }
-      }
-      question = $("#q" + i + "A").text();
-      notes = $("#q"+i+"C").val().trim();
-
-      resultsJob[i] = {
-        question : question,
-        answer : answer,
-        notes : notes
-      }
-    }
-       database.ref().child("Inspection: " + jobNum).update(resultsJob);
-    
-  });
-
-
+  initMap();
 
 });
+
+$("#arrived").click(function() {
+  $("#mapPage").hide();
+  $("#homeIns").show();
+  $("#map").hide();
+})
+
+// $("#homeIns").text("Session No. " + jobNum);
+
+$("#submit").click(function () {
+  event.preventDefault();
+  for (i = 0; i < quesNum; i++) {
+    for (j = 1; j < 4; j++) { //checking to see which of the 3 radio buttons is checked
+      if ($("#q" + i + "B" + j).is(':checked')) {
+        answer = $("#q" + i + "B" + j).attr("value");
+      }
+    }
+    question = $("#q" + i + "A").text();
+    console.log(question);
+    notes = $("#q" + i + "C").val().trim();
+
+    resultsJob[i] = {
+      quest: question,
+      answer: answer,
+      notes: notes
+    }
+  }
+  database.ref().child("Inspection: " + jobNum).update(resultsJob);
+
+});
+
+
+
+
   /*console.log(database.jobNum);
 
   var jobRef = database.key;

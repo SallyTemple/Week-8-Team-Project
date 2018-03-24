@@ -25,6 +25,7 @@
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAbtrqKd1DjVh2yLLaNmOX0IUKQsfCtfAA&callback=initMap"></script>
 
 </head>
 
@@ -143,131 +144,14 @@
             </div>
         </div>
 
-        <!--  Save for Phase 2 when we can use a Realtor API that can provide information about the property
-
-         <div id="propertyInfo" class="section">
-            <div class="subtitle">
-                <h3>Property Facts and Features
-                </h3>
-                <div class="row facts">
-                    <div class="col">
-                        <div class="media">
-                            <i class="material-icons">home</i>
-                            <div class="media-body">
-                                <h5 class="mt-0">Type</h5>
-                                <p id="type">Single Family Home</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col facts">
-                        <div class="media">
-                            <i class="material-icons">date_range</i>
-                            <div class="media-body">
-                                <h5 class="mt-0">Year Built</h5>
-                                <p id="year">1994</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col facts">
-                        <div class="media">
-                            <i class="material-icons">terrain</i>
-                            <div class="media-body">
-                                <h5 class="mt-0">Sqft</h5>
-                                <p id="sqFt"> 1845</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col facts">
-                        <div class="media">
-                            <i class="material-icons">local_hotel</i>
-                            <div class="media-body">
-                                <h5 class="mt-0">Bedrooms</h5>
-                                <p id="bdr"></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col facts">
-                        <div class="media">
-                            <img class="align-self-center mr-3" src="assets/images/bathroom.png" alt="bathrooms">
-                            <div class="media-body">
-                                <h5 class="mt-0">Bathrooms</h5>
-                                <p id="nBath"></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col facts">
-                        <div class="media">
-                            <img class="align-self-center mr-3" src="assets/images/parking.png" alt="#">
-                            <div class="media-body">
-                                <h5 class="mt-0">Parking</h5>
-                                <p id="parking"></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col facts">
-                        <div class="media">
-                            <img class="align-self-center mr-3" src="assets/images/blueprint.png" alt="#">
-                            <div class="media-body">
-                                <h5 class="mt-0">Lot</h5>
-                                <p id="lot"></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col facts">
-                        <div class="media">
-                            <img class="align-self-center mr-3" src="assets/images/ac.png" alt="#">
-                            <div class="media-body">
-                                <h5 class="mt-0">Cooling</h5>
-                                <p id="cooling">Central</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col facts">
-                        <div class="media">
-                            <img class="align-self-center mr-3" src="assets/images/heat.png" alt="#">
-                            <div class="media-body">
-                                <h5 class="mt-0">Heating</h5>
-                                <p id="heat">Pump</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col facts">
-                        <div class="media">
-                            <img class="align-self-center mr-3" src="assets/images/roof.png" alt="#">
-                            <div class="media-body">
-                                <h5 class="mt-0">Roofing</h5>
-                                <p id="roofing">Tile</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col facts">
-                        <div class="media">
-                            <img class="align-self-center mr-3" src="assets/images/flooring.png" alt="#">
-                            <div class="media-body">
-                                <h5 class="mt-0">Flooring</h5>
-                                <p id="flooring">Tile / Carpet</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col facts">
-                        <div class="media">
-                            <img class="align-self-center mr-3" src="assets/images/swimming-pool.png" alt="#">
-                            <div class="media-body">
-                                <h5 class="mt-0">Pool</h5>
-                                <p id="sPool">yes, In-ground</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div id="mapPage">
+            <div class="jumbotron startup" id="map">
+            </div>
+            <div>
+                <button type="button" class="btn btn-success" id="arrived">Arrived</button>
             </div>
         </div>
-    -->
+
         <div class="page2">
             <div id="homeIns" class="section">
                 <div>
@@ -330,9 +214,7 @@
                             </div>
                         </div>
                         <div class="row questions">
-                            <div class="col-sm" id="q2A">
-                                Are there cracks or shifts in foundation at the base of the walls and ceiling?
-                            </div>
+                            <div class="col-sm" id="q2A">Are there cracks or shifts in foundation at the base of the walls and ceiling?</div>
                             <div class="col-sm" id="q2B">
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="radio" name="question2" id="q2B1" value="Yes">
@@ -465,8 +347,8 @@
                             </div>
                         </div>
 
-                        <div class="row" id="q7A">
-                            <div class="col-sm">
+                        <div class="row">
+                            <div class="col-sm" id="q7A">
                                 Is the roof decaying?
                             </div>
                             <div class="col-sm" id="q7B">
@@ -591,8 +473,8 @@
 
     <!-- Firebase -->
 
-    <script src="assets/javascript/projectjs.js"></script>
-    <script src="assets/javascript/main.js"></script>
+    <script src="assets/javascript/pdf.js"></script>
+    <script src="assets/javascript/database.js"></script>
 
 
 </body>

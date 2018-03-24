@@ -28,7 +28,21 @@ var homeInfo = {
   pool: " ",
 };*/
 
-$("button").on("click",$("#saveInfo"), function () {
+$(document).ready(function () {
+  
+
+  $("#newJob").on("click", function () {
+
+
+    $(".startup").css({'display':'none'});
+    $("#basicInfo").show();
+    $("#customerInfo").show();
+
+  });
+
+});
+
+$("#saveInfo").on("click", function () {
 
   event.preventDefault();
 
@@ -47,9 +61,11 @@ $("button").on("click",$("#saveInfo"), function () {
   $("#customerInfo").hide();
   $("#homeIns").show();
 
- var jobRef=ref.child$(jobNum);
+  database.push(jobNum);
 
- database.ref().push(jobRef);
+ var jobRef = database.key;
+
+
   // create data base object
 
  
@@ -66,39 +82,43 @@ $("button").on("click",$("#saveInfo"), function () {
     homeInfo: homeInfo
 
   };
-  var addInfo= jobRef.child(jobNum).val();
 
-  addInfo.update(newJob);
+
+ database.update(newJob);
 
   // push info in Firebase Object
 
- 
-
- 
-  console.log(database);
-
-
+  console.log(database.jobNum);
 
 });
 
 
+$("#page2").on("click",$("#submit"), function () {
 
+  event.preventDefault();
+for (i=0; i<11; i++){
 
+  var question= $("#q"+ i +"A").val();
+  var status = $("#q" + i + "B : selected").text();
+  var notes =  $("#q"+ i +"C").val().trim();
 
+  var resultsJob = {
+    question:question,
+    status:status,
+    notes:notes
+  }
 
-$(document).ready(function () {
-  
+  var addInfo= database.child(jobNum);
 
-  $("#newJob").on("click", function () {
+  addInfo.update(resultsJob);
 
+  console.log(database.child(jobNum));
 
-    $(".startup").css({'display':'none'});
-    $("#basicInfo").show();
-    $("#customerInfo").show();
-
-  });
+}
 
 });
+
+
 
 
 /*http://www.pngall.com/home-png/download/4409  Save for Phase 2 with Real State API

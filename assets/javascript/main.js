@@ -11,7 +11,7 @@ firebase.initializeApp(config);
 
 var database = firebase.database();
 
-var jobNum = 100050
+/*
 
 var homeInfo = {
   type: "",
@@ -26,9 +26,9 @@ var homeInfo = {
   roof: " ",
   flooring: " ",
   pool: " ",
-};
+};*/
 
-$("#saveInfo").on("click", function () {
+$("button").on("click",$("#saveInfo"), function () {
 
   event.preventDefault();
 
@@ -43,13 +43,19 @@ $("#saveInfo").on("click", function () {
   var state = $("#state").val().trim();
   var zipCode = $("#zipCode").val().trim();
 
-  // getRealStateInfo(); // write info in to Section 3, // pull value in to home array
+  $("#basicInfo").hide();
+  $("#customerInfo").hide();
+  $("#homeIns").show();
 
+ var jobRef=ref.child$(jobNum);
+
+ database.ref().push(jobRef);
   // create data base object
-  var newJob = {
+
+ 
+  var newJob ={
     date: date,
     inspector: inspector,
-    jobNum: jobNum,
     name: name,
     email: email,
     address: address,
@@ -60,15 +66,17 @@ $("#saveInfo").on("click", function () {
     homeInfo: homeInfo
 
   };
+  var addInfo= jobRef.child(jobNum).val();
 
+  addInfo.update(newJob);
 
   // push info in Firebase Object
 
-  database.ref().push(newJob);
+ 
 
-  //var myUserId = firebase.auth().currentUser.uid;
+ 
   console.log(database);
-  //console.log(myUserId);
+
 
 
 });
@@ -78,12 +86,27 @@ $("#saveInfo").on("click", function () {
 
 
 
-//http://www.pngall.com/home-png/download/4409  Save for Phase 2 with Real State API
+$(document).ready(function () {
+  
+
+  $("#newJob").on("click", function () {
+
+
+    $(".startup").css({'display':'none'});
+    $("#basicInfo").show();
+    $("#customerInfo").show();
+
+  });
+
+});
+
+
+/*http://www.pngall.com/home-png/download/4409  Save for Phase 2 with Real State API
 
 
 // function getRealStateInfo() {
 
-  /*ajax, bring info, response, write in to HTML
+ajax, bring info, response, write in to HTML
 
 
   $("#type").text(homeInfo.type);
@@ -99,17 +122,3 @@ $("#saveInfo").on("click", function () {
   $("#flooring").text(homeInfo.flooring);
   $("#sPool").text(homeInfo.pool);
 }*/
-
-$(document).ready(function () {
-  
-
-  $("#newJob").on("click", function () {
-
-
-    $(".startup").css({'display':'none'});
-    $("#basicInfo").show();
-    $("#customerInfo").show();
-
-  });
-
-});

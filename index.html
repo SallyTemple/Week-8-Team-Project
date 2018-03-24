@@ -11,6 +11,7 @@
     <!-- Google ICONs-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <!--CSS-->
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
 
@@ -28,6 +29,8 @@
                     <h1 id="title2">
                         FAB D - Home SuperInspectors
                     </h1>
+
+                    <h4 id="slogan">Our goal is to give you peace of Mind!!</h4>
                 </div>
             </div>
         </div>
@@ -36,87 +39,104 @@
 
 
 
-    <div class="container page">
-        <div id="basicInfo" class="section">
-            <div class="subtitle">
-                <h3>Basic Information</h3>
-            </div>
-            <form class="form-group">
-                <div class="form-row">
-                    <div class="form-group col">
-                        <label for="date">Date</label>
-                        <input type="date" class="form-control" placeholder="01/01/2018" id="date">
-                    </div>
 
-                    <div class="form-group col">
-                        <label class="my-1 mr-2" for="homeInsp">Home Inspector</label>
-                        <select class="custom-select my-1 mr-sm-2" id="homeInsp">
-                            <option selected>Home Inspector...</option>
-                            <option>Chay EaHill</option>
-                            <option>Kyle Brittan</option>
-                            <option>Paulette Fenderson</option>
-                            <option>Miriam Armada</option>
-                        </select>
-                    </div>
-                    <div class="col">
-                        <label for="jobNum">Job#</label>
-                        <input type="text" class="form-control" placeholder="100125-2" id="jobNum">
-                    </div>
-                </div>
-            </form>
-        </div>
-        <div id="customerInfo" class="section">
-            <div class="subtitle">
-                <h3>Customer Information</h3>
+    <div class="container page">
+
+        <div class="jumbotron startup">
+            <div>
+                <h1>Start New Home Inspection
+                </h1>
+                <button type="button" class="btn btn-success" id="newJob">Save Job Info</button>
             </div>
-            <form>
-                <div class="form-row">
-                    <div class="col-md-4 mb-3">
-                        <label for="firstName">First name</label>
-                        <input type="text" class="form-control " id="firstName" placeholder="First name
-                        " value="Mark" required>
-                    </div>
-                    <div class="col-md-4 mb-3">
-                        <label for="lastName">Last name</label>
-                        <input type="text " class="form-control " id="lastName" placeholder="Last name
-                        " value="Otto " required>
-                    </div>
-                    <div class="col-md-4 mb-3">
-                        <label for="email">Email</label>
-                        <input type="email" class="form-control " id="email" placeholder="email" value="noname@homebuyer.com" required>
-                    </div>
-                </div>
-                <div class="form-row ">
-                    <div class="col-md-9 mb-3">
-                        <label for="address">Address</label>
-                        <input type="text " class="form-control " id="address" placeholder="Address " value="123
-                        Main Street " required>
-                    </div>
-                    <div class="col-md-3 mb-3">
-                        <label for="unitN">Unit #</label>
-                        <input type="text " class="form-control " id="unitN" placeholder="Unit/Appt" value="101">
-                    </div>
-                </div>
-                <div class="form-row ">
-                    <div class="col-md-6 mb-3 ">
-                        <label for="city">City</label>
-                        <input type="text " class="form-control " id="city" placeholder="Phoenix" required>
-                    </div>
-                    <div class="col-md-3 mb-3 ">
-                        <label for="state">State</label>
-                        <input type="text " class="form-control " id="state" placeholder="AZ" required>
-                    </div>
-                    <div class="col-md-3 mb-3 ">
-                        <label for="zipCode">Zip</label>
-                        <input type="number" class="form-control " id="zipCode" placeholder="85022" required>
-                    </div>
-                </div>
-                <div>
-                    <button type="button" class="btn btn-success" id="saveInfo">Save Job Info</button>
-                </div>
-            </form>
         </div>
-        <div id="propertyInfo" class="section">
+
+
+        <div id="page1">
+            <div id="basicInfo" class="section">
+                <div class="subtitle">
+                    <h3>Basic Information</h3>
+                </div>
+                <form class="form-group mb-3">
+                    <div class="form-row">
+                        <div class="form-group col">
+                            <label for="date">Date</label>
+                            <input type="date" class="form-control" placeholder="01/01/2018" id="date">
+                        </div>
+
+                        <div class="form-group col">
+                            <label class="my-1 mr-2" for="homeInsp">Home Inspector</label>
+                            <select class="custom-select my-1 mr-sm-2" id="homeInsp">
+                                <option selected>Home Inspector...</option>
+                                <option>Chay EaHill</option>
+                                <option>Kyle Brittan</option>
+                                <option>Paulette Fenderson</option>
+                                <option>Miriam Armada</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <label for="jobNum">Job#</label>
+                            <input type="text" class="form-control" placeholder="100258-1" id="jobNum">
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div id="customerInfo" class="section">
+                <div class="subtitle">
+                    <h3>Customer Information</h3>
+                </div>
+                <form class="mb-3">
+                    <div class="form-row">
+                        <div class="col-md-4 mb-3">
+                            <label for="firstName">First name</label>
+                            <input type="text" class="form-control " id="firstName" placeholder="First name
+                        " value="Mark" required>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="lastName">Last name</label>
+                            <input type="text " class="form-control " id="lastName" placeholder="Last name
+                        " value="Otto " required>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control " id="email" placeholder="email" value="noname@homebuyer.com" required>
+                        </div>
+                    </div>
+                    <div class="form-row ">
+                        <div class="col-md-9 mb-3">
+                            <label for="address">Address</label>
+                            <input type="text " class="form-control " id="address" placeholder="Address " value="123
+                        Main Street " required>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="unitN">Unit #</label>
+                            <input type="text " class="form-control " id="unitN" placeholder="Unit/Appt" value="101">
+                        </div>
+                    </div>
+                    <div class="form-row ">
+                        <div class="col-md-6 mb-3 ">
+                            <label for="city">City</label>
+                            <input type="text " class="form-control " id="city" placeholder="Phoenix" required>
+                        </div>
+                        <div class="col-md-3 mb-3 ">
+                            <label for="state">State</label>
+                            <input type="text " class="form-control " id="state" placeholder="AZ" required>
+                        </div>
+                        <div class="col-md-3 mb-3 ">
+                            <label for="zipCode">Zip</label>
+                            <input type="number" class="form-control " id="zipCode" placeholder="85022" required>
+                        </div>
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-success" id="saveInfo">Save Job Info</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!--  Save for Phase 2 when we can use a Realtor API that can provide information about the property
+
+         <div id="propertyInfo" class="section">
             <div class="subtitle">
                 <h3>Property Facts and Features
                 </h3>
@@ -238,334 +258,340 @@
                 </div>
             </div>
         </div>
-        <div id="homeIns" class="section">
-            <div>
-                <div class="subtitle">
-                    <h3>Home Inspection Checklist</h3>
+    -->
+        <div class="page2">
+            <div id="homeIns" class="section">
+                <div>
+                    <div class="subtitle">
+                        <h3>Home Inspection Checklist</h3>
+                    </div>
+                    <form>
+                        <div class="row questions">
+                            <div class="col-sm" id="q0A">
+                                Will any flooring need to be replaced?
+                            </div>
+                            <div class="col-sm">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="question10" id="q0B1" value="Yes">
+                                    <label class="form-check-label" for="q0B1">Yes</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="question10" id="q0B2" value="No">
+                                    <label class="form-check-label" for="q0B2">No</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="question10" id="q0B3" value="No">
+                                    <label class="form-check-label" for="q0B3">N/A </label>
+                                </div>
+                            </div>
+                            <div class="col-sm">
+
+                                <div class="form-group">
+                                    <label for="formGroupExampleInput">Notes</label>
+                                    <input type="text" class="form-control" id="q0C" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="row questions">
+                            <div class="col-sm" id="q1A">
+                                Is the visible foundation in good condition?
+                            </div>
+                            <div class="col-sm">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="question1" id="q1B1" value="Yes">
+                                    <label class="form-check-label" for="q1B1">Yes</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="question1" id="q1B2" value="No">
+                                    <label class="form-check-label" for="q1B2">No</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="question1" id="q1B3" value="No">
+                                    <label class="form-check-label" for="q1B3">N/A </label>
+                                </div>
+                            </div>
+                            <div class="col-sm">
+
+                                <div class="form-group">
+                                    <label for="formGroupExampleInput">Notes</label>
+                                    <input type="text" class="form-control" id="q1C" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row questions">
+                            <div class="col-sm" id="q2A">
+                                Are there cracks or shifts in foundation at the base of the walls and ceiling?
+                            </div>
+                            <div class="col-sm">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="question2" id="q2B1" value="Yes">
+                                    <label class="form-check-label" for="q2B1">Yes</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="question2" id="q2B2" value="No">
+                                    <label class="form-check-label" for="q2B2">No</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="question2" id="q2B3" value="No">
+                                    <label class="form-check-label" for="q2B3">N/A </label>
+                                </div>
+                            </div>
+                            <div class="col-sm">
+
+                                <div class="form-group">
+                                    <label for="formGroupExampleInput">Notes</label>
+                                    <input type="text" class="form-control" id="q2C" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row questions">
+                            <div class="col-sm" id="q3A">
+                                Are there any obvious soggy areas in the landscaping?
+                            </div>
+                            <div class="col-sm">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="question3" id="q3B1" value="Yes">
+                                    <label class="form-check-label" for="q3B1">Yes</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="question3" id="q3B2" value="No">
+                                    <label class="form-check-label" for="q3B2">No</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="question3" id="q3B3" value="No">
+                                    <label class="form-check-label" for="q3B3">N/A </label>
+                                </div>
+                            </div>
+                            <div class="col-sm">
+
+                                <div class="form-group">
+                                    <label for="formGroupExampleInput">Notes</label>
+                                    <input type="text" class="form-control" id="q3C" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row questions">
+                            <div class="col-sm" id="q4A">
+                                Does the toilet seat warmer works?
+                            </div>
+                            <div class="col-sm">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="question4" id="q4B1" value="Yes">
+                                    <label class="form-check-label" for="q4B1">Yes</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="question4" id="q4B2" value="No">
+                                    <label class="form-check-label" for="q4B2">No</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="question4" id="q4B3" value="No">
+                                    <label class="form-check-label" for="q4B3">N/A </label>
+                                </div>
+                            </div>
+                            <div class="col-sm">
+
+                                <div class="form-group">
+                                    <label for="formGroupExampleInput">Notes</label>
+                                    <input type="text" class="form-control" id="q4C" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row questions">
+                            <div class="col-sm" id="q5A">
+                                Did you find any hidden money in the wall?
+                            </div>
+                            <div class="col-sm">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="question5" id="q5B1" value="Yes">
+                                    <label class="form-check-label" for="q5B1">Yes</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="question5" id="q5B2" value="No">
+                                    <label class="form-check-label" for="q5B2">No</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="question5" id="q5B3" value="No">
+                                    <label class="form-check-label" for="q5B3">N/A </label>
+                                </div>
+                            </div>
+                            <div class="col-sm">
+
+                                <div class="form-group">
+                                    <label for="formGroupExampleInput">Notes</label>
+                                    <input type="text" class="form-control" id="q5C" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="row questions">
+                            <div class="col-sm" id="q6A">
+                                Is the exterior paint stained, peeling, or faded?
+                            </div>
+                            <div class="col-sm">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="question6" id="q6B1" value="Yes">
+                                    <label class="form-check-label" for="q6B1">Yes</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="question6" id="q6B2" value="No">
+                                    <label class="form-check-label" for="q6B2">No</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="question6" id="q6B3" value="No">
+                                    <label class="form-check-label" for="q6B3">N/A </label>
+                                </div>
+                            </div>
+                            <div class="col-sm">
+
+                                <div class="form-group">
+                                    <label for="formGroupExampleInput">Notes</label>
+                                    <input type="text" class="form-control" id="q6C" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row" id="q7A">
+                            <div class="col-sm">
+                                Is the roof decaying?
+                            </div>
+                            <div class="col-sm">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="question7" id="q7B1" value="Yes">
+                                    <label class="form-check-label" for="q7B1">Yes</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="question7" id="q7B2" value="No">
+                                    <label class="form-check-label" for="q7B2">No</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="question7" id="q7B3" value="No">
+                                    <label class="form-check-label" for="q7B3">N/A </label>
+                                </div>
+                            </div>
+                            <div class="col-sm">
+
+                                <div class="form-group">
+                                    <label for="formGroupExampleInput">Notes</label>
+                                    <input type="text" class="form-control" id="q7c" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm" id="q8A">
+                                Did the Rossie the robot cooked you a balance meal during the inspection?
+                            </div>
+                            <div class="col-sm">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="question8" id="q8B1" value="Yes">
+                                    <label class="form-check-label" for="q8B1">Yes</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="question8" id="q8B2" value="No">
+                                    <label class="form-check-label" for="q8B2">No</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="question8" id="q8B3" value="No">
+                                    <label class="form-check-label" for="q8B3">N/A </label>
+                                </div>
+                            </div>
+                            <div class="col-sm">
+
+                                <div class="form-group">
+                                    <label for="formGroupExampleInput">Notes</label>
+                                    <input type="text" class="form-control" id="q8C3" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm" id="q9A">
+                                Are any appliances included in the purchase of the home? (I.e. refrigerator, dishwasher, washing machine, etc.)
+                            </div>
+                            <div class="col-sm">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="question9" id="q9B1" value="Yes">
+                                    <label class="form-check-label" for="q9B1">Yes</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="question9" id="q9B2" value="No">
+                                    <label class="form-check-label" for="q9B2">No</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="question9" id="q9B3" value="No">
+                                    <label class="form-check-label" for="q9B3">N/A </label>
+                                </div>
+                            </div>
+                            <div class="col-sm">
+
+                                <div class="form-group">
+                                    <label for="formGroupExampleInput">Notes</label>
+                                    <input type="text" class="form-control" id="q9B" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- done-->
+                        <div class="row">
+                            <div class="col-sm" id="q10A">
+                                Does the storm shutter close with verbal commands?
+                            </div>
+                            <div class="col-sm">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="question10" id="q10B1" value="Yes">
+                                    <label class="form-check-label" for="q10B1">Yes</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="question10" id="q10B2" value="No">
+                                    <label class="form-check-label" for="q10B2">No</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="question10" id="q10B3" value="No">
+                                    <label class="form-check-label" for="q10B3">N/A </label>
+                                </div>
+                            </div>
+                            <div class="col-sm">
+
+                                <div class="form-group">
+                                    <label for="formGroupExampleInput">Notes</label>
+                                    <input type="text" class="form-control" id="q10C" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <button type="button" class="btn btn-success" id="submit">Complete Home Inspection</button>
+                    </form>
                 </div>
-                <form>
-                    <div class="row questions">
-                        <div class="col-sm" id="q0A">
-                            Will any flooring need to be replaced?
-                        </div>
-                        <div class="col-sm">
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="question10" id="q0B1" value="Yes">
-                                <label class="form-check-label" for="q0B1">Yes</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="question10" id="q0B2" value="No">
-                                <label class="form-check-label" for="q0B2">No</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="question10" id="q0B3" value="No">
-                                <label class="form-check-label" for="q0B3">N/A </label>
-                            </div>
-                        </div>
-                        <div class="col-sm">
-
-                            <div class="form-group">
-                                <label for="formGroupExampleInput">Notes</label>
-                                <input type="text" class="form-control" id="q0C" placeholder="">
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="row questions">
-                        <div class="col-sm" id="q1A">
-                            Is the visible foundation in good condition?
-                        </div>
-                        <div class="col-sm">
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="question1" id="q1B1" value="Yes">
-                                <label class="form-check-label" for="q1B1">Yes</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="question1" id="q1B2" value="No">
-                                <label class="form-check-label" for="q1B2">No</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="question1" id="q1B3" value="No">
-                                <label class="form-check-label" for="q1B3">N/A </label>
-                            </div>
-                        </div>
-                        <div class="col-sm">
-
-                            <div class="form-group">
-                                <label for="formGroupExampleInput">Notes</label>
-                                <input type="text" class="form-control" id="q1C" placeholder="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row questions">
-                        <div class="col-sm" id="q2A">
-                            Are there cracks or shifts in foundation at the base of the walls and ceiling?
-                        </div>
-                        <div class="col-sm">
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="question2" id="q2B1" value="Yes">
-                                <label class="form-check-label" for="q2B1">Yes</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="question2" id="q2B2" value="No">
-                                <label class="form-check-label" for="q2B2">No</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="question2" id="q2B3" value="No">
-                                <label class="form-check-label" for="q2B3">N/A </label>
-                            </div>
-                        </div>
-                        <div class="col-sm">
-
-                            <div class="form-group">
-                                <label for="formGroupExampleInput">Notes</label>
-                                <input type="text" class="form-control" id="q2C" placeholder="">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row questions">
-                        <div class="col-sm" id="q3A">
-                            Are there any obvious soggy areas in the landscaping?
-                        </div>
-                        <div class="col-sm">
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="question3" id="q3B1" value="Yes">
-                                <label class="form-check-label" for="q3B1">Yes</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="question3" id="q3B2" value="No">
-                                <label class="form-check-label" for="q3B2">No</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="question3" id="q3B3" value="No">
-                                <label class="form-check-label" for="q3B3">N/A </label>
-                            </div>
-                        </div>
-                        <div class="col-sm">
-
-                            <div class="form-group">
-                                <label for="formGroupExampleInput">Notes</label>
-                                <input type="text" class="form-control" id="q3C" placeholder="">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row questions">
-                        <div class="col-sm" id="q4A">
-                            Does the toilet seat warmer works?
-                        </div>
-                        <div class="col-sm">
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="question4" id="q4B1" value="Yes">
-                                <label class="form-check-label" for="q4B1">Yes</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="question4" id="q4B2" value="No">
-                                <label class="form-check-label" for="q4B2">No</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="question4" id="q4B3" value="No">
-                                <label class="form-check-label" for="q4B3">N/A </label>
-                            </div>
-                        </div>
-                        <div class="col-sm">
-
-                            <div class="form-group">
-                                <label for="formGroupExampleInput">Notes</label>
-                                <input type="text" class="form-control" id="q4C" placeholder="">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row questions">
-                        <div class="col-sm" id="q5A">
-                            Did you find any hidden money in the wall?
-                        </div>
-                        <div class="col-sm">
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="question5" id="q5B1" value="Yes">
-                                <label class="form-check-label" for="q5B1">Yes</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="question5" id="q5B2" value="No">
-                                <label class="form-check-label" for="q5B2">No</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="question5" id="q5B3" value="No">
-                                <label class="form-check-label" for="q5B3">N/A </label>
-                            </div>
-                        </div>
-                        <div class="col-sm">
-
-                            <div class="form-group">
-                                <label for="formGroupExampleInput">Notes</label>
-                                <input type="text" class="form-control" id="q5C" placeholder="">
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="row questions">
-                        <div class="col-sm" id="q6A">
-                            Is the exterior paint stained, peeling, or faded?
-                        </div>
-                        <div class="col-sm">
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="question6" id="q6B1" value="Yes">
-                                <label class="form-check-label" for="q6B1">Yes</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="question6" id="q6B2" value="No">
-                                <label class="form-check-label" for="q6B2">No</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="question6" id="q6B3" value="No">
-                                <label class="form-check-label" for="q6B3">N/A </label>
-                            </div>
-                        </div>
-                        <div class="col-sm">
-
-                            <div class="form-group">
-                                <label for="formGroupExampleInput">Notes</label>
-                                <input type="text" class="form-control" id="q6C" placeholder="">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row" id="q7A">
-                        <div class="col-sm">
-                            Is the roof decaying?
-                        </div>
-                        <div class="col-sm">
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="question7" id="q7B1" value="Yes">
-                                <label class="form-check-label" for="q7B1">Yes</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="question7" id="q7B2" value="No">
-                                <label class="form-check-label" for="q7B2">No</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="question7" id="q7B3" value="No">
-                                <label class="form-check-label" for="q7B3">N/A </label>
-                            </div>
-                        </div>
-                        <div class="col-sm">
-
-                            <div class="form-group">
-                                <label for="formGroupExampleInput">Notes</label>
-                                <input type="text" class="form-control" id="q7c" placeholder="">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-sm" id="q8A">
-                            Did the Rossie the robot cooked you a balance meal during the inspection?
-                        </div>
-                        <div class="col-sm">
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="question8" id="q8B1" value="Yes">
-                                <label class="form-check-label" for="q8B1">Yes</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="question8" id="q8B2" value="No">
-                                <label class="form-check-label" for="q8B2">No</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="question8" id="q8B3" value="No">
-                                <label class="form-check-label" for="q8B3">N/A </label>
-                            </div>
-                        </div>
-                        <div class="col-sm">
-
-                            <div class="form-group">
-                                <label for="formGroupExampleInput">Notes</label>
-                                <input type="text" class="form-control" id="q8C3" placeholder="">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-sm" id="q9A">
-                            Are any appliances included in the purchase of the home? (I.e. refrigerator, dishwasher, washing machine, etc.)
-                        </div>
-                        <div class="col-sm">
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="question9" id="q9B1" value="Yes">
-                                <label class="form-check-label" for="q9B1">Yes</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="question9" id="q9B2" value="No">
-                                <label class="form-check-label" for="q9B2">No</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="question9" id="q9B3" value="No">
-                                <label class="form-check-label" for="q9B3">N/A </label>
-                            </div>
-                        </div>
-                        <div class="col-sm">
-
-                            <div class="form-group">
-                                <label for="formGroupExampleInput">Notes</label>
-                                <input type="text" class="form-control" id="q9B" placeholder="">
-                            </div>
-                        </div>
-                    </div>
-                    <!-- done-->
-                    <div class="row">
-                        <div class="col-sm" id="q10A">
-                            Does the storm shutter close with verbal commands?
-                        </div>
-                        <div class="col-sm">
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="question10" id="q10B1" value="Yes">
-                                <label class="form-check-label" for="q10B1">Yes</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="question10" id="q10B2" value="No">
-                                <label class="form-check-label" for="q10B2">No</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="question10" id="q10B3" value="No">
-                                <label class="form-check-label" for="q10B3">N/A </label>
-                            </div>
-                        </div>
-                        <div class="col-sm">
-
-                            <div class="form-group">
-                                <label for="formGroupExampleInput">Notes</label>
-                                <input type="text" class="form-control" id="q10C" placeholder="">
-                            </div>
-                        </div>
-                    </div>
-
-                    <button type="button" class="btn btn-success" id="submit">Complete Home Inspection</button>
-                </form>
             </div>
         </div>
+    </div>
 
+    <!-- Icon Credits for "Real State Phase 2"
         <div>Icons made by
             <a href="http://www.freepik.com" title="Freepik">Freepik</a> from
             <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by
             <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
         </div>
+    -->
 
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-            crossorigin="anonymous"></script>
-        <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-            crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-            crossorigin="anonymous"></script>
-        <!-- Firebase -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!-- Firebase -->
 
 
 
-        <script src="assets/javascript/main.js"></script>
+    <script src="assets/javascript/main.js"></script>
 
 </body>
 

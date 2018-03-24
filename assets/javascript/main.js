@@ -11,7 +11,7 @@ firebase.initializeApp(config);
 
 var database = firebase.database();
 
-
+var jobNum = 100050
 
 var homeInfo = {
   type: "",
@@ -74,7 +74,11 @@ $("#saveInfo").on("click", function () {
 });
 
 
-//http://www.pngall.com/home-png/download/4409
+
+
+
+
+//http://www.pngall.com/home-png/download/4409  Save for Phase 2 with Real State API
 
 
 // function getRealStateInfo() {
@@ -95,3 +99,17 @@ $("#saveInfo").on("click", function () {
   $("#flooring").text(homeInfo.flooring);
   $("#sPool").text(homeInfo.pool);
 }*/
+
+$(document).ready(function () {
+  
+
+  $("#newJob").on("click", function () {
+
+
+    $(".startup").css({'display':'none'});
+    $("#basicInfo").show();
+    $("#customerInfo").show();
+
+  });
+
+});

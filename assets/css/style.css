@@ -1,5 +1,6 @@
 body {
     background-image: url(../images/background-body.jpg);
+    font-family: 'Quicksand', sans-serif;
 }
 
 .header {
@@ -7,26 +8,41 @@ body {
     margin-bottom: 25px;
 }
 
+#slogan {
+    text-align: right;
+    font-size: 1.5rem;
+}
+
 form {
-    background: rgba(236, 227, 227, 0.568);
+    background: rgba(236, 227, 227, 0.7);
     padding: 25px;
 }
 
-label{
+label {
     font-weight: 600;
-    font-size:1.5rem;
+    font-size: 1.5rem;
 }
 
-.questions{
-    font-weight: 600;
-    font-size:1.5rem;
+#jobNum {
+
+    text-align: center;
+    font-weight: 500;
 }
 
-.btn{  
+
+
+input {
+    font-size: 1.2rem;
+}
+
+.questions {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.btn {
     background-color: rgb(95, 99, 102);
-    border:  rgb(95, 99, 102);
-    
-
+    border: rgb(95, 99, 102);
 }
 
 .top {
@@ -40,6 +56,24 @@ label{
     background-color: rgb(95, 99, 102);
     padding: 10px;
     color: whitesmoke;
+}
+
+.startup {
+    margin-top:100px;
+    background-image: url(../images/background.jpg);
+    padding: 10px;
+    color: whitesmoke;
+    font-family: 'Anton', sans-serif;
+    font-weight: 800px;
+    text-align: center;
+    padding: 100px 0px 100px 0px;
+}
+
+#newJob {
+    background-color: whitesmoke;
+    color: rgb(95, 99, 102);
+    font-size: 1.5rem;
+    margin-top:25px;
 }
 
 .section {
@@ -73,9 +107,9 @@ h3 {
     filter: invert(100%);
 }
 
-
 #title2 {
     background-color: transparent;
+    font-size: 3rem;
     text-align: start;
     margin-left: 60px;
     font-family: 'Anton', sans-serif;
@@ -94,4 +128,17 @@ h3 {
 
 .media-body {
     margin-left: 5px;
+}
+
+#basicInfo{
+
+    display: none;
+}
+#customerInfo{
+
+    display: none;
+}
+
+#homeIns{
+    display: none;
 }

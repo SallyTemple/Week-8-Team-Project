@@ -6,26 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Project 1</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous">
+
     <!-- Google ICONs-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <!--CSS-->
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
-
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
     <script type="text/javascript" src="http://doc2pdf.pdf24.org/js/api.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAbtrqKd1DjVh2yLLaNmOX0IUKQsfCtfAA&callback=initMap"></script>
     <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAbtrqKd1DjVh2yLLaNmOX0IUKQsfCtfAA&callback=initMap"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <!-- Firebase -->
 
 </head>
 
@@ -143,7 +142,6 @@
                 </form>
             </div>
         </div>
-
         <div id="mapPage">
             <div class="jumbotron startup" id="map">
             </div>
@@ -151,7 +149,6 @@
                 <button type="button" class="btn btn-success" id="arrived">Arrived</button>
             </div>
         </div>
-
         <div class="page2">
             <div id="homeIns" class="section">
                 <div>
@@ -160,9 +157,7 @@
                     </div>
                     <form>
                         <div class="row questions">
-                            <div class="col-sm" id="q0A">
-                                Will any flooring need to be replaced?
-                            </div>
+                            <div class="col-sm" id="q0A">Will any flooring need to be replaced?</div>
                             <div class="col-sm" id="q0B">
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="radio" name="question0" id="q0B1" value="Yes">
@@ -185,12 +180,10 @@
                                 </div>
                             </div>
                         </div>
-
+                        <hr width="100%">
 
                         <div class="row questions">
-                            <div class="col-sm" id="q1A">
-                                Is the visible foundation in good condition?
-                            </div>
+                            <div class="col-sm" id="q1A">Is the visible foundation in good condition?</div>
                             <div class="col-sm" id="q1B">
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="radio" name="question1" id="q1B1" value="Yes">
@@ -213,6 +206,7 @@
                                 </div>
                             </div>
                         </div>
+                        <hr width="100%">
                         <div class="row questions">
                             <div class="col-sm" id="q2A">Are there cracks or shifts in foundation at the base of the walls and ceiling?</div>
                             <div class="col-sm" id="q2B">
@@ -237,11 +231,9 @@
                                 </div>
                             </div>
                         </div>
-
+                        <hr width="100%">
                         <div class="row questions">
-                            <div class="col-sm" id="q3A">
-                                Are there any obvious soggy areas in the landscaping?
-                            </div>
+                            <div class="col-sm" id="q3A">Are there any obvious soggy areas in the landscaping?</div>
                             <div class="col-sm" id="q3B">
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="radio" name="question3" id="q3B1" value="Yes">
@@ -264,11 +256,9 @@
                                 </div>
                             </div>
                         </div>
-
+                        <hr width="100%">
                         <div class="row questions">
-                            <div class="col-sm" id="q4A">
-                                Does the toilet seat warmer works?
-                            </div>
+                            <div class="col-sm" id="q4A">Does the toilet seat warmer works?</div>
                             <div class="col-sm" id="q4B">
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="radio" name="question4" id="q4B1" value="Yes">
@@ -291,11 +281,9 @@
                                 </div>
                             </div>
                         </div>
-
+                        <hr width="100%">
                         <div class="row questions">
-                            <div class="col-sm" id="q5A">
-                                Did you find any hidden money in the wall?
-                            </div>
+                            <div class="col-sm" id="q5A">Did you find any hidden money in the wall?</div>
                             <div class="col-sm" id="q5B">
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="radio" name="question5" id="q5B1" value="Yes">
@@ -319,11 +307,9 @@
                             </div>
                         </div>
 
-
+                        <hr width="100%">
                         <div class="row questions">
-                            <div class="col-sm" id="q6A">
-                                Is the exterior paint stained, peeling, or faded?
-                            </div>
+                            <div class="col-sm" id="q6A">Is the exterior paint stained, peeling, or faded?</div>
                             <div class="col-sm" id="q6B">
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="radio" name="question6" id="q6B1" value="Yes">
@@ -346,11 +332,9 @@
                                 </div>
                             </div>
                         </div>
-
-                        <div class="row">
-                            <div class="col-sm" id="q7A">
-                                Is the roof decaying?
-                            </div>
+                        <hr width="100%">
+                        <div class="row questions">
+                            <div class="col-sm" id="q7A">Is the roof decaying?</div>
                             <div class="col-sm" id="q7B">
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="radio" name="question7" id="q7B1" value="Yes">
@@ -373,65 +357,64 @@
                                 </div>
                             </div>
                         </div>
+                        <hr width="100%">
+                        <div class="row questions">
+                            <div class="row">
+                                <div class="col-sm" id="q8A"> Did the Rossie the robot cooked you a balance meal during the inspection?</div>
+                                <div class="col-sm" id="q8B">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="question8" id="q8B1" value="Yes">
+                                        <label class="form-check-label" for="q8B1">Yes</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="question8" id="q8B2" value="No">
+                                        <label class="form-check-label" for="q8B2">No</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="question8" id="q8B3" value="N/A">
+                                        <label class="form-check-label" for="q8B3">N/A </label>
+                                    </div>
+                                </div>
+                                <div class="col-sm">
 
-                        <div class="row">
-                            <div class="col-sm" id="q8A">
-                                Did the Rossie the robot cooked you a balance meal during the inspection?
-                            </div>
-                            <div class="col-sm" id="q8B">
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="question8" id="q8B1" value="Yes">
-                                    <label class="form-check-label" for="q8B1">Yes</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="question8" id="q8B2" value="No">
-                                    <label class="form-check-label" for="q8B2">No</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="question8" id="q8B3" value="N/A">
-                                    <label class="form-check-label" for="q8B3">N/A </label>
-                                </div>
-                            </div>
-                            <div class="col-sm">
-
-                                <div class="form-group">
-                                    <label for="formGroupExampleInput">Notes</label>
-                                    <input type="text" class="form-control" id="q8C" placeholder="">
+                                    <div class="form-group">
+                                        <label for="formGroupExampleInput">Notes</label>
+                                        <input type="text" class="form-control" id="q8C" placeholder="">
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <hr width="100%">
+                        <div class="row questions">
+                            <div class="row">
+                                <div class="col-sm" id="q9A">Are any appliances included in the purchase of the home? (I.e. refrigerator, dishwasher,
+                                    washing machine, etc.)</div>
+                                <div class="col-sm" id="q9B">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="question9" id="q9B1" value="Yes">
+                                        <label class="form-check-label" for="q9B1">Yes</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="question9" id="q9B2" value="No">
+                                        <label class="form-check-label" for="q9B2">No</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="question9" id="q9B3" value="N/A">
+                                        <label class="form-check-label" for="q9B3">N/A </label>
+                                    </div>
+                                </div>
+                                <div class="col-sm">
 
-                        <div class="row">
-                            <div class="col-sm" id="q9A">
-                                Are any appliances included in the purchase of the home? (I.e. refrigerator, dishwasher, washing machine, etc.)
-                            </div>
-                            <div class="col-sm" id="q9B">
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="question9" id="q9B1" value="Yes">
-                                    <label class="form-check-label" for="q9B1">Yes</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="question9" id="q9B2" value="No">
-                                    <label class="form-check-label" for="q9B2">No</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="question9" id="q9B3" value="N/A">
-                                    <label class="form-check-label" for="q9B3">N/A </label>
-                                </div>
-                            </div>
-                            <div class="col-sm">
-
-                                <div class="form-group">
-                                    <label for="formGroupExampleInput">Notes</label>
-                                    <input type="text" class="form-control" id="q9C" placeholder="">
+                                    <div class="form-group">
+                                        <label for="formGroupExampleInput">Notes</label>
+                                        <input type="text" class="form-control" id="q9C" placeholder="">
+                                    </div>
                                 </div>
                             </div>
                         </div>
-
-                        <div class="row">
-                            <div class="col-sm" id="q10A">
-                                Does the storm shutter close with verbal commands?
-                            </div>
+                        <hr width="100%">
+                        <div class="row questions">
+                            <div class="col-sm" id="q10A">Does the storm shutter close with verbal commands?</div>
                             <div class="col-sm" id="q10B">
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="radio" name="question10" id="q10B1" value="Yes">
@@ -454,7 +437,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <button type="button" class="btn btn-success" id="submit">Complete Home Inspection</button>
                     </form>
                 </div>
@@ -469,12 +451,8 @@
             <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
         </div>
     -->
-
-
-    <!-- Firebase -->
-
-    <script src="assets/javascript/pdf.js"></script>
     <script src="assets/javascript/database.js"></script>
+    <script src="assets/javascript/pdf.js"></script>
 
 
 </body>

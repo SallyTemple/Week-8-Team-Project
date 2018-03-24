@@ -11,11 +11,11 @@ $(document).ready(function () {
   var city;
   var state;
   var zipCode;
-  var answer; 
-  var notes;  
+  var answer;
+  var notes;
 
 
-  
+
   //The following variable creates a blank pdf as well prepares the email
   var doc = new PDF24Doc({  //Needs to be PDF24Doc
     charset: "UTF-8",
@@ -41,8 +41,10 @@ $(document).ready(function () {
       author: "Inspector: " + homeInsp,
       body: "Customer: " + customer + "     Address: " + address + ", " + city + ", " + state + " " + zipCode
     });
-    console.log("Customer: " + customer + "     Address: " + address + ", " + city + ", " + state + " " + zipCode);
+    //  console.log("Customer: " + customer + "     Address: " + address + ", " + city + ", " + state + " " + zipCode);
+  }
 
+  function pushQuestions() {
     for (i = 0; i < quesNum; i++) {
       for (j = 1; j < 4; j++) { //checking to see which of the 3 radio buttons is checked
         if ($("#q" + i + "B" + j).is(':checked')) {
@@ -57,12 +59,12 @@ $(document).ready(function () {
       doc.addElement({
         title: $("#q" + i + "A").text(),  //makes the question a subsection header
         body: response  //makes the checked answer and note the subsection content
-      })
+      });
     }
   }
 
-  //click function makes it so the variables used are assigned the values in their corresponding text boxes.  Then the pdf gets all of its information pushed to it and finally creates the pdf.
-  $("#submit").click(function (event) {
+  //click function makes it so the variables used are assigned the values in their corresponding text boxes on the customer info page. It then pushes the info to the PDF
+  $("#saveInfo").on("click", function (event) {
     event.preventDefault();
     date = $("#date").val().trim();
     homeInsp = $("#homeInsp").val();
@@ -74,6 +76,14 @@ $(document).ready(function () {
     state = $("#state").val().trim();
     zipCode = $("#zipCode").val().trim();
     pushInfo();
+    console.log("button pushed");
+    //createPDF();
+  });
+
+  //This takes the questions, answers, and notes and pushes them to the PDF.  Then it makes the PDF to be saved or emailed.
+  $("#submit").click(function (event) {
+    event.preventDefault();
+    pushQuestions();
     createPDF();
   });
-})
+});

@@ -10,28 +10,35 @@
         crossorigin="anonymous">
     <!-- Google ICONs-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
     <!--CSS-->
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
-    <!--JS, Popper.js, and jQuery-->
-
-
-
 
 
 </head>
 
 <body>
-
-    <div class="container top">
-        <h1>FAB D - Home SuperInspectors
-            <h1>
-                <h4></h4>
+    <div class="container-fluid header">
+        <div class="container top align-items-center ">
+            <div class="row align-items-center">
+                <div class="col-3 align-items-center title">
+                    <img src="assets/images/logo-home.png" class="logo" alt="Cartoon Inspector" height="150" width="150">
+                </div>
+                <div class="col-9 title">
+                    <h1 id="title2">
+                        FAB D - Home SuperInspectors
+                    </h1>
+                </div>
+            </div>
+        </div>
     </div>
-    <br>
-    <br>
+
+
+
+
     <div class="container page">
         <div id="basicInfo" class="section">
-            <div>
+            <div class="subtitle">
                 <h3>Basic Information</h3>
             </div>
             <form class="form-group">
@@ -59,7 +66,7 @@
             </form>
         </div>
         <div id="customerInfo" class="section">
-            <div>
+            <div class="subtitle">
                 <h3>Customer Information</h3>
             </div>
             <form>
@@ -110,7 +117,7 @@
             </form>
         </div>
         <div id="propertyInfo" class="section">
-            <div>
+            <div class="subtitle">
                 <h3>Property Facts and Features
                 </h3>
                 <div class="row facts">
@@ -148,7 +155,7 @@
                             <i class="material-icons">local_hotel</i>
                             <div class="media-body">
                                 <h5 class="mt-0">Bedrooms</h5>
-                                <p id="bdr">3</p>
+                                <p id="bdr"></p>
                             </div>
                         </div>
                     </div>
@@ -157,7 +164,7 @@
                             <img class="align-self-center mr-3" src="assets/images/bathroom.png" alt="bathrooms">
                             <div class="media-body">
                                 <h5 class="mt-0">Bathrooms</h5>
-                                <p id="nBath">Bathrooms</p>
+                                <p id="nBath"></p>
                             </div>
                         </div>
                     </div>
@@ -166,7 +173,7 @@
                             <img class="align-self-center mr-3" src="assets/images/parking.png" alt="#">
                             <div class="media-body">
                                 <h5 class="mt-0">Parking</h5>
-                                <p id="parking">2 Spaces</p>
+                                <p id="parking"></p>
                             </div>
                         </div>
                     </div>
@@ -177,7 +184,7 @@
                             <img class="align-self-center mr-3" src="assets/images/blueprint.png" alt="#">
                             <div class="media-body">
                                 <h5 class="mt-0">Lot</h5>
-                                <p id="lot">4000 sqft</p>
+                                <p id="lot"></p>
                             </div>
                         </div>
                     </div>
@@ -233,9 +240,11 @@
         </div>
         <div id="homeIns" class="section">
             <div>
-                <h3>Home Inspection Checklist</h3>
+                <div class="subtitle">
+                    <h3>Home Inspection Checklist</h3>
+                </div>
                 <form>
-                    <div class="row">
+                    <div class="row questions">
                         <div class="col-sm" id="q0A">
                             Will any flooring need to be replaced?
                         </div>
@@ -546,7 +555,7 @@
 
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
             crossorigin="anonymous"></script>
-            <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
             crossorigin="anonymous"></script>

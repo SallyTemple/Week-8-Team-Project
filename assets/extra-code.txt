@@ -1,0 +1,566 @@
+<div class="row">
+                        <div class="col-sm" id="q11A">
+                            Is the visible foundation in good condition?
+                        </div>
+                        <div class="col-sm">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="q11B1" value="option1">
+                                <label class="form-check-label" for="q11B1">Yes</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="q11B2" value="option2">
+                                <label class="form-check-label" for="q11B2">No</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="q11B3" value="option3">
+                                <label class="form-check-label" for="q11B3">N/A </label>
+                            </div>
+                        </div>
+                        <div class="col-sm">
+
+                            <div class="form-group">
+                                <label for="formGroupExampleInput">Notes</label>
+                                <input type="text" class="form-control" id="q11V" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm">
+                            Will any flooring need to be replaced?
+                        </div>
+                        <div class="col-sm">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox1" value="option1">
+                                <label class="form-check-label" for="inlineCheckbox1">Yes</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2">No</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox3" value="option3">
+                                <label class="form-check-label" for="inlineCheckbox3">N/A </label>
+                            </div>
+                        </div>
+                        <div class="col-sm">
+
+                            <div class="form-group">
+                                <label for="formGroupExampleInput">Notes</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm">
+                            Do windows and doors operate properly?
+                        </div>
+                        <div class="col-sm">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox1" value="option1">
+                                <label class="form-check-label" for="inlineCheckbox1">Yes</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2">No</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox3" value="option3">
+                                <label class="form-check-label" for="inlineCheckbox3">N/A </label>
+                            </div>
+                        </div>
+                        <div class="col-sm">
+
+                            <div class="form-group">
+                                <label for="formGroupExampleInput">Notes</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm">
+                            Is there leakage in or around sinks?
+                        </div>
+                        <div class="col-sm">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox1" value="option1">
+                                <label class="form-check-label" for="inlineCheckbox1">Yes</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2">No</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox3" value="option3">
+                                <label class="form-check-label" for="inlineCheckbox3">N/A </label>
+                            </div>
+                        </div>
+                        <div class="col-sm">
+
+                            <div class="form-group">
+                                <label for="formGroupExampleInput">Notes</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm">
+                            Is the water pressure adequate?
+                        </div>
+                        <div class="col-sm">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox1" value="option1">
+                                <label class="form-check-label" for="inlineCheckbox1">Yes</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2">No</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox3" value="option3">
+                                <label class="form-check-label" for="inlineCheckbox3">N/A </label>
+                            </div>
+                        </div>
+                        <div class="col-sm">
+
+                            <div class="form-group">
+                                <label for="formGroupExampleInput">Notes</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm">
+                            Is there sufficient ventilation throughout the home?
+                        </div>
+                        <div class="col-sm">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox1" value="option1">
+                                <label class="form-check-label" for="inlineCheckbox1">Yes</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2">No</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox3" value="option3">
+                                <label class="form-check-label" for="inlineCheckbox3">N/A </label>
+                            </div>
+                        </div>
+                        <div class="col-sm">
+
+                            <div class="form-group">
+                                <label for="formGroupExampleInput">Notes</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm">
+                            Do toilets operate properly?
+                        </div>
+                        <div class="col-sm">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox1" value="option1">
+                                <label class="form-check-label" for="inlineCheckbox1">Yes</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2">No</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox3" value="option3">
+                                <label class="form-check-label" for="inlineCheckbox3">N/A </label>
+                            </div>
+                        </div>
+                        <div class="col-sm">
+
+                            <div class="form-group">
+                                <label for="formGroupExampleInput">Notes</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm">
+                            Does the attic have sufficient insulation and ventilation?
+                        </div>
+                        <div class="col-sm">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox1" value="option1">
+                                <label class="form-check-label" for="inlineCheckbox1">Yes</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2">No</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox3" value="option3">
+                                <label class="form-check-label" for="inlineCheckbox3">N/A </label>
+                            </div>
+                        </div>
+                        <div class="col-sm">
+
+                            <div class="form-group">
+                                <label for="formGroupExampleInput">Notes</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm">
+                            Do pipes leak?
+                        </div>
+                        <div class="col-sm">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox1" value="option1">
+                                <label class="form-check-label" for="inlineCheckbox1">Yes</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2">No</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox3" value="option3">
+                                <label class="form-check-label" for="inlineCheckbox3">N/A </label>
+                            </div>
+                        </div>
+                        <div class="col-sm">
+
+                            <div class="form-group">
+                                <label for="formGroupExampleInput">Notes</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm">
+                            Is the water pump in working condition?
+                        </div>
+                        <div class="col-sm">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox1" value="option1">
+                                <label class="form-check-label" for="inlineCheckbox1">Yes</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2">No</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox3" value="option3">
+                                <label class="form-check-label" for="inlineCheckbox3">N/A </label>
+                            </div>
+                        </div>
+                        <div class="col-sm">
+
+                            <div class="form-group">
+                                <label for="formGroupExampleInput">Notes</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm">
+                            Does every room in the home receive sufficient air flow?
+                        </div>
+                        <div class="col-sm">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox1" value="option1">
+                                <label class="form-check-label" for="inlineCheckbox1">Yes</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2">No</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox3" value="option3">
+                                <label class="form-check-label" for="inlineCheckbox3">N/A </label>
+                            </div>
+                        </div>
+                        <div class="col-sm">
+
+                            <div class="form-group">
+                                <label for="formGroupExampleInput">Notes</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm">
+                            Is there a history of asbestos on heating pipes, water pipes, are air ducts?
+                        </div>
+                        <div class="col-sm">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox1" value="option1">
+                                <label class="form-check-label" for="inlineCheckbox1">Yes</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2">No</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox3" value="option3">
+                                <label class="form-check-label" for="inlineCheckbox3">N/A </label>
+                            </div>
+                        </div>
+                        <div class="col-sm">
+
+                            <div class="form-group">
+                                <label for="formGroupExampleInput">Notes</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm">
+                            Can you easily spot the required smoke and carbon monoxide detectors?
+                        </div>
+                        <div class="col-sm">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox1" value="option1">
+                                <label class="form-check-label" for="inlineCheckbox1">Yes</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2">No</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox3" value="option3">
+                                <label class="form-check-label" for="inlineCheckbox3">N/A </label>
+                            </div>
+                        </div>
+                        <div class="col-sm">
+
+                            <div class="form-group">
+                                <label for="formGroupExampleInput">Notes</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm">
+                            Is the chimney in good condition?
+                        </div>
+                        <div class="col-sm">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox1" value="option1">
+                                <label class="form-check-label" for="inlineCheckbox1">Yes</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2">No</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox3" value="option3">
+                                <label class="form-check-label" for="inlineCheckbox3">N/A </label>
+                            </div>
+                        </div>
+                        <div class="col-sm">
+
+                            <div class="form-group">
+                                <label for="formGroupExampleInput">Notes</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm">
+                            Are there leaks in the septic tank?
+                        </div>
+                        <div class="col-sm">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox1" value="option1">
+                                <label class="form-check-label" for="inlineCheckbox1">Yes</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2">No</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox3" value="option3">
+                                <label class="form-check-label" for="inlineCheckbox3">N/A </label>
+                            </div>
+                        </div>
+                        <div class="col-sm">
+
+                            <div class="form-group">
+                                <label for="formGroupExampleInput">Notes</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm">
+                            Is there proper drainage carrying water away from the house?
+                        </div>
+                        <div class="col-sm">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox1" value="option1">
+                                <label class="form-check-label" for="inlineCheckbox1">Yes</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2">No</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox3" value="option3">
+                                <label class="form-check-label" for="inlineCheckbox3">N/A </label>
+                            </div>
+                        </div>
+                        <div class="col-sm">
+
+                            <div class="form-group">
+                                <label for="formGroupExampleInput">Notes</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm">
+                            Are there stains or other damages on the floors?
+                        </div>
+                        <div class="col-sm">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox1" value="option1">
+                                <label class="form-check-label" for="inlineCheckbox1">Yes</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2">No</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox3" value="option3">
+                                <label class="form-check-label" for="inlineCheckbox3">N/A </label>
+                            </div>
+                        </div>
+                        <div class="col-sm">
+
+                            <div class="form-group">
+                                <label for="formGroupExampleInput">Notes</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm">
+                            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                        </div>
+                        <div class="col-sm">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox1" value="option1">
+                                <label class="form-check-label" for="inlineCheckbox1">Yes</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2">No</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox3" value="option3">
+                                <label class="form-check-label" for="inlineCheckbox3">N/A </label>
+                            </div>
+                        </div>
+                        <div class="col-sm">
+
+                            <div class="form-group">
+                                <label for="formGroupExampleInput">Notes</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm">
+                            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                        </div>
+                        <div class="col-sm">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox1" value="option1">
+                                <label class="form-check-label" for="inlineCheckbox1">Yes</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2">No</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox3" value="option3">
+                                <label class="form-check-label" for="inlineCheckbox3">N/A </label>
+                            </div>
+                        </div>
+                        <div class="col-sm">
+
+                            <div class="form-group">
+                                <label for="formGroupExampleInput">Notes</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm">
+                            Are there cracks or shifts in foundation at the base of the walls and ceiling?
+                        </div>
+                        <div class="col-sm">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox1" value="option1">
+                                <label class="form-check-label" for="inlineCheckbox1">Yes</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2">No</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox3" value="option3">
+                                <label class="form-check-label" for="inlineCheckbox3">N/A </label>
+                            </div>
+                        </div>
+                        <div class="col-sm">
+
+                            <div class="form-group">
+                                <label for="formGroupExampleInput">Notes</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm">
+                            Is there any evidence of termite damage or rotted wood?
+                        </div>
+                        <div class="col-sm">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox1" value="option1">
+                                <label class="form-check-label" for="inlineCheckbox1">Yes</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2">No</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox3" value="option3">
+                                <label class="form-check-label" for="inlineCheckbox3">N/A </label>
+                            </div>
+                        </div>
+                        <div class="col-sm">
+
+                            <div class="form-group">
+                                <label for="formGroupExampleInput">Notes</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+                            </div>
+                        </div>
+                    </div>

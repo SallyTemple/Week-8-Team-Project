@@ -61,16 +61,12 @@ $("#saveInfo").on("click", function () {
   $("#customerInfo").hide();
   $("#homeIns").show();
 
-  database.push(jobNum);
-
- var jobRef = database.key;
-
 
   // create data base object
-
  
   var newJob ={
     date: date,
+    jobNum: jobNum;
     inspector: inspector,
     name: name,
     email: email,
@@ -84,11 +80,13 @@ $("#saveInfo").on("click", function () {
   };
 
 
- database.update(newJob);
-
-  // push info in Firebase Object
-
   console.log(database.jobNum);
+
+  database.push(newJob);
+
+  var jobRef = database.key;
+
+  $("#homeIns").text("Session No." + jobRef.val());
 
 });
 

@@ -13,21 +13,8 @@ $(document).ready(function () {
   var zipCode;
   var answer;
   var notes;
-
-
-
-  //The following variable creates a blank pdf as well prepares the email
-  var doc = new PDF24Doc({  //Needs to be PDF24Doc
-    charset: "UTF-8",
-    headline: "Home Inspection for " + address,
-    filename: "homeinspection " + jobNum,
-    pageSize: "210x297", //standard size paper
-    emailTo: email,
-    emailFrom: email, //This would be populated with a company email instead of the client's but we only want to make up one email address for security reasons
-    emailSubject: "Home Inspection Results",
-    emailBody: "Dear " + customer + ", thank you for choosing FAD-B Home Inspections.  You will find a PDF of your home inspection attach.  Have a FAB-ulous Day, " + homeInsp,
-    emailBodyType: "text"
-  });
+  var doc;
+  
 
   //this function will put all of the pdf components together to create the final product.  This function of a single line exists because js/API does not like .click(doc.create()) so this is a work around that issue
   function createPDF() {
@@ -36,6 +23,18 @@ $(document).ready(function () {
 
   //this function will push the information to the blank pdf.  The first part is the general information.  The for loop goes through all of the questions, answers, and notes; adding each individual set of question, answer, note to the pdf one at a time.
   function pushInfo() {
+      //The following variable creates a blank pdf as well prepares the email
+    doc = new PDF24Doc({  //Needs to be PDF24Doc
+      charset: "UTF-8",
+      headline: "Home Inspection for " + address,
+      filename: "homeinspection " + jobNum,
+      pageSize: "210x297", //standard size paper
+      emailTo: email,
+      emailFrom: email, //This would be populated with a company email instead of the client's but we only want to make up one email address for security reasons
+      emailSubject: "Home Inspection Results",
+      emailBody: "Dear " + customer + ", thank you for choosing FAD-B Home Inspections.  You will find a PDF of your home inspection attach.  Have a FAB-ulous Day, " + homeInsp,
+      emailBodyType: "text"
+    });
     doc.addElement({
       title: "Customer Information",
       author: "Inspector: " + homeInsp,
